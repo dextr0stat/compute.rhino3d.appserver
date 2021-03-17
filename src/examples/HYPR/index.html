@@ -157,12 +157,12 @@ function init() {
     // add some controls to orbit the camera
     controls = new OrbitControls(camera, renderer.domElement)
     
-    // Meta material 
+    // !!!!!!Meta material 
     material = new THREE.MeshNormalMaterial()
 
     // add a directional light
     //Meta change lighting
-    const directionalLight = new THREE.DirectionalLight( 255,0,0 )
+    const directionalLight = new THREE.DirectionalLight( 0,0,0 )
     directionalLight.intensity = 5
     scene.add( directionalLight )
 
@@ -173,7 +173,7 @@ function init() {
     window.addEventListener( 'resize', onWindowResize, false )
 
     animate()
-    // Meta Animate
+    // !!!!!!Meta Animate
     requestAnimationFrame( animate )
     renderer.render( scene, camera )
 }
