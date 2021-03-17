@@ -173,6 +173,9 @@ function init() {
     window.addEventListener( 'resize', onWindowResize, false )
 
     animate()
+    // Meta Animate
+    requestAnimationFrame( animate )
+    renderer.render( scene, camera )
 }
 
 /**
