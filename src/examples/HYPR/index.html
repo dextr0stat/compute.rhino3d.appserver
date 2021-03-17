@@ -208,7 +208,9 @@
 
       // very light grey for background, like rhino
       // Meta Change background 
-      scene.background = new THREE.Color(0, 0, 0)
+      scene.background = new THREE.Color(black)
+      // radial-gradient(circle, rgba(0,139,255,1) 0%, rgba(255,0,143,1) 100%)
+      
 
       // create the renderer and add it to the html
       renderer = new THREE.WebGLRenderer({ antialias: true })
@@ -224,7 +226,7 @@
 
       // add a directional light
       //Meta change lighting, can add multiple lights
-      const directionalLight = new THREE.DirectionalLight(255, 255, 255)
+      const directionalLight = new THREE.DirectionalLight(255, 20, 147)
       directionalLight.intensity = 2
       scene.add(directionalLight)
 
