@@ -59,6 +59,7 @@
                   <br>
                   <input type="range" id="RH_IN:SCALE" min="0" max="10" value="5" step="1">
                 </div>
+                
                 <!-- Meta Disable the download button -->
                 <div><button id="downloadButton" disabled>Download</button></div>
                 <div><a href="001_1 HYPR.gh" download="001_1 HYPR.gh.html">Save source code</a></div>
@@ -156,7 +157,7 @@ function init() {
     controls = new OrbitControls(camera, renderer.domElement)
     
     // Meta material 
-    material = new THREE.MeshNormalMaterial()
+    // material = new THREE.MeshNormalMaterial()
 
     // add a directional light
     const directionalLight = new THREE.DirectionalLight( 0xffffff )
