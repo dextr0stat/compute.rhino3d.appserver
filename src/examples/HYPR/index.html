@@ -17,7 +17,7 @@
 
       font-family: 'IBM Plex Mono', monospace;
       /* color:#f3f3f3; */
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
     }
 
     canvas {
@@ -109,6 +109,12 @@
 </head>
 
 <body>
+  <h1 style="text-align: center;">
+            HY.PR </h1>
+          
+ <p style="text-align: center;">
+              // 001 // </p>
+
   <div id="loader"></div>
   <div id="container">
     <div id="overlay">
@@ -225,7 +231,7 @@
       material = new THREE.MeshNormalMaterial()
 
       // add a directional light
-      //Meta change lighting, can add multiple lights
+      //Meta change lighting to deep pink, can add multiple lights
       const directionalLight = new THREE.DirectionalLight(255, 20, 147)
       directionalLight.intensity = 2
       scene.add(directionalLight)
