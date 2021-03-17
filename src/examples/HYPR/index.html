@@ -113,19 +113,19 @@
   <div id="container">
     <div id="overlay">
       <div>
-        <label for="RH_IN:SCALE">SCALE</label>
+        <!-- <label for="RH_IN:SCALE">SCALE</label> -->
         <input type="range" id="RH_IN:SCALE" min="0" max="10" value="5" step="1" orient="vertical">
       </div>
       <div>
-        <label for="RH_IN:SPIN">SPIN</label>
+        <!-- <label for="RH_IN:SPIN">SPIN</label> -->
         <input type="range" id="RH_IN:SPIN" min="0" max="360" value="117" step="1" orient="vertical">
       </div>
 
 
-      <!-- Meta Disable the download button -->
-      <!-- <div><button id="downloadButton" disabled>Download</button></div>
-                <div><a href="001_1 HYPR.gh" download="001_1 HYPR.gh.html">Save source code</a></div> -->
     </div>
+    <!-- Meta Disable the download button and move it out of overlay -->
+    <div><button id="downloadButton" disabled style="display: none">Download</button></div>
+    <div><a href="001_1 HYPR.gh" download="001_1 HYPR.gh.html" style="display: none">Save source code</a></div>
   </div>
 
   <script type="module">
