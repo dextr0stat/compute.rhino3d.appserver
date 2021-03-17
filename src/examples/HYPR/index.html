@@ -59,6 +59,15 @@
       /* padding: 5px; */
     }
 
+    #overlay div label {
+      /* Meta: this code turns the slider vertical
+      code from here https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
+      height: 80vh;
+      -webkit-appearance: slider-vertical;
+      writing-mode: bt-lr;
+      padding: 0 5px;
+    }
+
     #overlay div input {
       /* Meta: this code turns the slider vertical
       code from here https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
@@ -104,13 +113,11 @@
   <div id="container">
     <div id="overlay">
       <div>
-        <!-- <label for="RH_IN:SCALE">SCALE</label>
-        <br> -->
+        <label for="RH_IN:SCALE">SCALE</label>
         <input type="range" id="RH_IN:SCALE" min="0" max="10" value="5" step="1" orient="vertical">
       </div>
       <div>
-        <!-- <label for="RH_IN:SPIN">SPIN</label>
-        <br> -->
+        <label for="RH_IN:SPIN">SPIN</label>
         <input type="range" id="RH_IN:SPIN" min="0" max="360" value="117" step="1" orient="vertical">
       </div>
 
