@@ -161,9 +161,9 @@ function init() {
     material = new THREE.MeshNormalMaterial()
 
     // add a directional light
-    //Meta change lighting
+    //Meta change lighting, can add multiple lights
     const directionalLight = new THREE.DirectionalLight( 0,0,0 )
-    directionalLight.intensity = 5
+    directionalLight.intensity = 2
     scene.add( directionalLight )
 
     const ambientLight = new THREE.AmbientLight()
