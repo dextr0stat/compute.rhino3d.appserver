@@ -244,9 +244,15 @@
 
       // add a directional light
       //Meta change lighting to deep pink, can add multiple lights
-      const directionalLight = new THREE.DirectionalLight()
-      directionalLight.intensity = 2
-      scene.add(directionalLight)
+      const directionalLight1 = new THREE.DirectionalLight(0x008bff)
+      directionalLight1.position.set( 2, 2, 2 )
+      directionalLight1.intensity = 2
+      scene.add(directionalLight1)
+      const directionalLight2 = new THREE.DirectionalLight(0xff008f)
+      directionalLight2.position.set( -2, -2, -2 )
+      directionalLight2.intensity = 2
+      scene.add(directionalLight2)
+
 
       const ambientLight = new THREE.AmbientLight()
       scene.add(ambientLight)
