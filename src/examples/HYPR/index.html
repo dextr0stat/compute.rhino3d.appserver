@@ -128,7 +128,7 @@ function getInputs() {
 }
 
 // more globals
-let scene, camera, renderer, controls
+let scene, camera, renderer, controls, material
 
 /**
  * Sets up the scene, camera, renderer, lights and controls and starts the animation
@@ -157,7 +157,7 @@ function init() {
     controls = new OrbitControls(camera, renderer.domElement)
     
     // Meta material 
-    // material = new THREE.MeshNormalMaterial()
+    material = new THREE.MeshNormalMaterial()
 
     // add a directional light
     const directionalLight = new THREE.DirectionalLight( 0xffffff )
