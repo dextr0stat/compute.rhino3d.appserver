@@ -121,25 +121,26 @@
               // 001 // </p> -->
 
   <div id="loader"></div>
+  <div id="input-overlay">
+    <div>
+      <!-- <label for="RH_IN:SCALE">SCALE</label> -->
+      <input type="range" id="RH_IN:SCALE" min="0" max="10" value="5" step="1" orient="vertical">
+    </div>
+    <div>
+      <!-- <label for="RH_IN:SPIN">SPIN</label> -->
+      <input type="range" id="RH_IN:SPIN" min="0" max="360" value="117" step="1" orient="vertical">
+    </div>
+  </div>
+  <div id="text-overlay">
+    <h1>
+      HY.PR
+    </h1>
+    <p>
+      // 001 //
+    </p>
+  </div>
+
   <div id="container">
-    <div id="input-overlay">
-      <div>
-        <!-- <label for="RH_IN:SCALE">SCALE</label> -->
-        <input type="range" id="RH_IN:SCALE" min="0" max="10" value="5" step="1" orient="vertical">
-      </div>
-      <div>
-        <!-- <label for="RH_IN:SPIN">SPIN</label> -->
-        <input type="range" id="RH_IN:SPIN" min="0" max="360" value="117" step="1" orient="vertical">
-      </div>
-    </div>
-    <div id="text-overlay">
-      <h1>
-        HY.PR
-      </h1>
-      <p>
-        // 001 //
-      </p>
-    </div>
     <!-- Meta Disable the download button and move it out of overlay -->
     <div><button id="downloadButton" disabled style="display: none">Download</button></div>
     <div><a href="001_1 HYPR.gh" download="001_1 HYPR.gh.html" style="display: none">Save source code</a></div>
