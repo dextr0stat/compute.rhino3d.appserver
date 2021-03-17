@@ -118,6 +118,13 @@
   <div id="loader"></div>
   <div id="container">
     <div id="overlay">
+     
+      <h1 style="text-align: center;">
+        HY.PR </h1>
+      
+<p style="text-align: center;">
+          // 001 // </p>
+
       <div>
         <!-- <label for="RH_IN:SCALE">SCALE</label> -->
         <input type="range" id="RH_IN:SCALE" min="0" max="10" value="5" step="1" orient="vertical">
@@ -232,7 +239,7 @@
 
       // add a directional light
       //Meta change lighting to deep pink, can add multiple lights
-      const directionalLight = new THREE.DirectionalLight(1, 1, 1)
+      const directionalLight = new THREE.DirectionalLight(255, 255, 255)
       directionalLight.intensity = 2
       scene.add(directionalLight)
 
