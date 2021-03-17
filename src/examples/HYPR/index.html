@@ -252,6 +252,15 @@
       directionalLight2.position.set( -2, -2, -2 )
       directionalLight2.intensity = 2
       scene.add(directionalLight2)
+      const directionalLight3 = new THREE.DirectionalLight(0x008bff)
+      directionalLight3.position.set( -2, 2, 2 )
+      directionalLight3.intensity = 2
+      scene.add(directionalLight3)
+      const directionalLight4 = new THREE.DirectionalLight(0xff008f)
+      directionalLight4.position.set( 2, -2, -2 )
+      directionalLight4.intensity = 2
+      scene.add(directionalLight4)
+
 
 
       const ambientLight = new THREE.AmbientLight()
